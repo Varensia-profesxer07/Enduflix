@@ -351,3 +351,15 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* ENDUFLIX admin overview: scoped styling, no changes to existing pages */
+.ef-dashboard{display:grid;grid-template-columns:245px minmax(0,1fr);gap:24px;margin-top:22px}
+.ef-dash-sidebar,.ef-dash-panel,.ef-stat{background:#101925;border:1px solid #273b52;border-radius:14px}
+.ef-dash-sidebar{padding:18px;align-self:start}.ef-dash-sidebar h3{font-size:14px;color:#8cc8ff;margin:4px 0 18px}
+.ef-dash-sidebar a{display:block;padding:12px;border-radius:9px;color:#dbe9f7;text-decoration:none;font-size:14px}
+.ef-dash-sidebar a:hover,.ef-dash-sidebar .ef-dash-active{background:#103456;color:#6cc7ff}
+.ef-stat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:16px 0 22px}
+.ef-stat{padding:22px 18px;min-height:120px}.ef-stat-label{font-size:14px;color:#b4c8dd}.ef-stat strong{display:block;font-size:34px;color:#fff;margin-top:12px}.ef-stat small{font-size:11px;color:#ffbc85}
+.ef-dash-panel{padding:24px}.ef-dash-actions{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0}
+@media(max-width:950px){.ef-stat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ef-dashboard{grid-template-columns:1fr}.ef-dash-sidebar{display:flex;flex-wrap:wrap;gap:4px}.ef-dash-sidebar h3{width:100%}}
+@media(max-width:480px){.ef-stat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ef-stat{padding:14px}.ef-stat strong{font-size:26px}}
