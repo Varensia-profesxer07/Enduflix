@@ -1,0 +1,27 @@
+ENDUFLIX — GitHub Pages พร้อมอัปโหลด (HTML + JavaScript)
+=================================================
+
+ขั้นตอนอัปโหลด:
+1. แตก ZIP แล้วเปิดโฟลเดอร์ ENDUFLIX_GITHUB_UPLOAD
+2. GitHub > New repository > ตั้งชื่อ enduflix > Create repository
+3. Add file > Upload files แล้วลาก index.html, config.js, assets, .nojekyll ไปที่ ROOT ของ repository
+4. Commit changes
+5. Settings > Pages > Deploy from a branch > main > /(root) > Save
+6. เปิด https://ชื่อผู้ใช้.github.io/enduflix/
+
+สิ่งที่ใช้ได้ทันทีเมื่อขึ้น GitHub Pages:
+- หน้าแรก ENDUFLIX, บทเรียน 12 ตอน, ค้นหา, หน้าเรียน, รูปภาพจากไฟล์เดิม
+- ดูวิดีโอต้นฉบับ EP.1 และ EP.2 (ไฟล์ MP4 อยู่ใน assets/media)
+- Responsive สำหรับมือถือและคอมพิวเตอร์
+- ไม่ใช้ PHP, XAMPP หรือ MySQL สำหรับการเปิดหน้าเว็บ
+
+สิ่งที่ต้องตั้งค่าก่อนเป็นระบบหลายผู้ใช้จริง:
+- โปรเจกต์ Supabase ENDUFLIX แยกต่างหากจาก PLAYY
+- รัน SQL ในไฟล์โปรเจกต์ฉบับผู้พัฒนา (ไม่อยู่ใน ZIP อัปโหลด GitHub)
+- กรอก Project URL + publishable key ใน config.js
+- ตั้ง Redirect URL ของ Auth, สมัครและยืนยันอีเมลแอดมิน แล้วตั้งสิทธิ์จาก SQL Editor
+- เพิ่มลิงก์ Google Forms และอัปโหลดวิดีโอ EP.3–12 ตามจริง
+- การแจ้งเตือนมือถือขณะปิดเว็บไซต์ต้องมีบริการรับ webhook เพิ่ม ไม่ใช่การแจ้งเตือนพื้นฐาน
+
+ห้ามนำ service_role, sb_secret หรือรหัสผ่านขึ้น GitHub
+ข้อมูล/รหัสผ่าน MySQL เดิมไม่ได้ถูกย้ายไป Supabase

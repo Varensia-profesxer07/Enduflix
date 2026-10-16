@@ -1,0 +1,18 @@
+ENDUFLIX · เปิดใช้งานจริงด้วย GitHub Pages + Supabase
+
+1) สร้าง GitHub Repository ชื่อ enduflix (เลือก Public สำหรับ GitHub Pages ฟรี)
+2) แตก ZIP นี้ แล้วอัปโหลดไฟล์ทั้งหมดจากข้างในสู่ ROOT ของ Repository (index.html ต้องอยู่ root)
+3) GitHub Settings > Pages > Deploy from a branch > main > /(root) > Save
+4) เข้า Supabase Dashboard: https://supabase.com/dashboard/project/sipghyfzsqdtvnqxultb
+   Authentication > URL Configuration > ใส่ Site URL และ Redirect URLs ของลิงก์ GitHub Pages จริง
+   เช่น https://USERNAME.github.io/enduflix/**
+5) สมัครบัญชีเจ้าของเว็บที่หน้าสมัคร แล้วใน Supabase SQL Editor (แก้ your@email.com ก่อน):
+   update public.ef_profiles set role='admin' where email='your@email.com';
+6) ออกจากระบบแล้วเข้าใหม่ > เมนูแอดมิน จะอนุมัติบัญชีอาจารย์และจัดการสื่อได้
+
+สำคัญ: เว็บไซต์วิดีโอที่แนบมากับต้นฉบับมี EP.1 และ EP.2 เท่านั้น EP.3-12 มีหัวข้อแต่ต้องเพิ่มวิดีโอ
+ฟังก์ชันตรวจสอบปัญหาบัญชีอยู่หน้าแอดมิน > ตรวจสอบบัญชี (OPS)
+บริการแจ้งเตือนแบบ Push ขณะปิดเว็บยังไม่ติดตั้ง ต้องเปิดเว็บจึงรับแจ้งเตือนได้
+แบบทดสอบ pre/post 40 ข้อ, แบบประเมิน, ระบบผู้ใช้และการอนุมัติใช้ฐานข้อมูล Supabase ใหม่จริง
+
+อัปโหลดหน้าปก: เข้าด้วยบัญชี teacher/admin → จัดการสื่อการสอน → เลือกแก้ไขตอน → เลือกรูป JPG/PNG/WebP <=5MB → บันทึก (ทำทีหลังวิดีโอได้)

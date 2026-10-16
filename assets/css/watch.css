@@ -1,0 +1,372 @@
+/* =============================================
+   Enduflix - Video Watch Page Stylesheet
+   ============================================= */
+
+.watch-page {
+    padding-top: 68px;
+}
+
+.video-player-container {
+    background: #000;
+    width: 100%;
+    max-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-player-container video {
+    width: 100%;
+    max-height: 75vh;
+    outline: none;
+}
+
+.video-detail-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 4%;
+}
+
+.video-info {
+    margin-bottom: 25px;
+}
+
+.video-info .video-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.video-info .video-meta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    flex-wrap: wrap;
+}
+
+.video-info .video-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.video-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.video-actions .action-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    color: var(--text-secondary);
+    font-family: 'Prompt', sans-serif;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.video-actions .action-btn:hover {
+    background: var(--bg-card-hover);
+    color: var(--text-primary);
+}
+
+.video-actions .action-btn.active {
+    background: rgba(22,139,255,0.15);
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.video-actions .action-btn i {
+    font-size: 1rem;
+}
+
+/* Teacher Info */
+.teacher-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 25px;
+}
+
+.teacher-info img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.teacher-info .info .name {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.teacher-info .info .role {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* Description */
+.video-description {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    padding: 20px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    white-space: pre-line;
+}
+
+/* ==================== COMMENTS SECTION ==================== */
+.comments-section {
+    margin-top: 30px;
+}
+
+.comments-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.comment-form {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+    align-items: flex-start;
+}
+
+.comment-form img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.comment-form .form-wrapper {
+    flex: 1;
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    color: var(--text-primary);
+    font-family: 'Prompt', sans-serif;
+    font-size: 0.9rem;
+    resize: none;
+    min-height: 60px;
+    transition: var(--transition);
+}
+
+.comment-form textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    min-height: 100px;
+}
+
+.comment-form .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Comment Item */
+.comment-item {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.comment-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.comment-item .comment-content {
+    flex: 1;
+}
+
+.comment-item .comment-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 4px;
+}
+
+.comment-item .comment-header .name {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.comment-item .comment-header .time {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.comment-item .comment-text {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.comment-item .comment-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.comment-item .comment-actions button {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Prompt', sans-serif;
+    transition: var(--transition);
+}
+
+.comment-item .comment-actions button:hover {
+    color: var(--text-primary);
+}
+
+.comment-replies {
+    margin-left: 52px;
+    margin-top: 15px;
+    padding-left: 15px;
+    border-left: 2px solid var(--border-color);
+}
+
+/* ==================== RELATED VIDEOS ==================== */
+.related-section {
+    margin-top: 30px;
+}
+
+.related-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.related-list .related-item {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+    padding: 8px;
+    border-radius: var(--radius);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.related-list .related-item:hover {
+    background: var(--bg-card);
+}
+
+.related-list .related-item .thumb {
+    width: 168px;
+    height: 94px;
+    border-radius: 6px;
+    overflow: hidden;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.related-list .related-item .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.related-list .related-item .thumb .duration {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 0.7rem;
+}
+
+.related-list .related-item .info .title {
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 4px;
+}
+
+.related-list .related-item .info .teacher {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.related-list .related-item .info .meta {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+}
+
+/* ==================== WATCH LAYOUT ==================== */
+.watch-layout {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 30px;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 25px 4%;
+}
+
+@media (max-width: 1024px) {
+    .watch-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .video-info .video-title {
+        font-size: 1.1rem;
+    }
+
+    .video-actions {
+        gap: 8px;
+    }
+
+    .video-actions .action-btn {
+        padding: 8px 14px;
+        font-size: 0.8rem;
+    }
+
+    .comment-form {
+        flex-direction: column;
+    }
+
+    .related-list .related-item .thumb {
+        width: 120px;
+        height: 68px;
+    }
+}

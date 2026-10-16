@@ -1,0 +1,24 @@
+ENDUFLIX ORIGINAL UI — GitHub Pages (Cinema Restoration)
+
+ฐานไฟล์: enduflix(1).zip / index.php + includes/header.php + includes/journey-panel.php + assets/css/cinema.css
+
+ต่างจากไฟล์ที่แสดง PVC Learning Lab:
+- หน้าแรกใช้ต้นฉบับแบบ ENDUFLIX ORIGINAL ภาพโรงงาน 3 ฉาก + สไลด์และปุ่มพักภาพ
+- มีชั้นวางบทเรียน 2 แถว รวม 12 EP ตามหน้า PHP เดิม
+- เมนูเพิ่ม แบบทดสอบ / รายการของฉัน / ประวัติการรับชม / โปรไฟล์
+- ฟังก์ชัน Supabase (บัญชี, แบบทดสอบ, คะแนน, วิดีโอ, แอดมิน) จากเวอร์ชัน JavaScript ก่อนหน้ายังอยู่
+- ไม่ต้องสร้าง Supabase ใหม่ ใช้ Enduflix โปรเจกต์แยกจาก PLAYY
+
+อัปเดตเว็บที่มีอยู่:
+1) เข้า https://github.com/Varensia-profesxer07/Enduflix
+2) Add file > Upload files
+3) อัปโหลดไฟล์ทั้งหมดจาก ZIP นี้ (รวม assets/css/cinema.css, assets/js/cinema.js, assets/js/cinema-adapter.js และ assets/js/app.js ที่อัปเดต)
+4) กด Commit changes
+5) รอ GitHub Pages ทำงาน แล้วเปิด https://varensia-profesxer07.github.io/Enduflix/?page=home
+6) ถ้ายังเป็นหน้าเดิม กด Ctrl+Shift+R และเช็ก Actions ว่า deploy ผ่าน
+
+ข้อจำกัดที่ต้องตรวจด้วยบัญชีจริง:
+- สมัครสมาชิกและยืนยันอีเมล ต้องตั้ง Auth Site URL/Redirect URLs ใน Supabase
+- การเข้าสู่ระบบด้วยบัญชีแอดมิน ต้องมอบสิทธิ์ admin ครั้งแรกอย่างปลอดภัย
+- ทดสอบในเบราว์เซอร์จากลิงก์ GitHub จริงอีกครั้งหลังอัปเดต
+- วิดีโอ EP3-EP12 ยังไม่ครบ และหน้าปกที่ไม่อัปโหลดจะแสดงภาพสำรอง
